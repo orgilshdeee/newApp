@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.students {
+  width: 60vw;
+  margin: auto;
+  margin-top: 5vh;
+  border: 1px black solid;
+  padding: 1rem;
+  background-color: aqua;
+}
+.student {
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}

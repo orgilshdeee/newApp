@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "name": "Tom",
+      "studentID": "0001",
+      "gender": "male",
+      "score": 20,
+      "country": "United States"
+    },
+    {
+      "name": "Fuefue",
+      "studentID": "0002",
+      "gender": "male",
+      "score": 21,
+      "country": "Kongo"
+    },
+    {
+      "name": "Shibata",
+      "studentID": "0003",
+      "gender": "female",
+      "score": 19,
+      "country": "Japan"
+    },
+    {
+      "name": "Dog",
+      "studentID": "0004",
+      "gender": "animal",
+      "score": 3,
+      "country": "shelter"
+    }
+  ]
+}
