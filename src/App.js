@@ -8,13 +8,16 @@ import AddStudent from "./components/AddButton";
 
 function App() {
   const [students, setStudents] = useState([]);
+  const [scores, setScores] = useState([]);
   useEffect(() => {
     fetch("toDo.json")
       .then((res) => res.json())
       .then((res) => {
         setStudents(res.students);
+        saveStuds(res.students);
       });
   }, []);
+
   function AddingStudent(e) {
     setStudents([...students, e]);
   }
@@ -25,13 +28,19 @@ function App() {
       })
     );
   }
-  // let total = 0;
-  // students.forEach((e) => (total += e.score));
-  // let average = total / students.length;
+
   function removeUser(name) {
-    // debugger;
     setStudents(students.filter((student) => student.name !== name));
   }
+  let arr = [];
+  function saveStuds(props) {
+    // debugger;
+    props.map((prop) => {
+      arr = [...arr, prop.score];
+    });
+  }
+
+  // console.log(scores);
   return (
     <>
       <div className="students">

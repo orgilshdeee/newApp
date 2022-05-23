@@ -10,10 +10,8 @@ function AddStudent(props) {
     props.studentInfo({
       name: e.target.elements.getName.value,
       age: e.target.elements.getScore.value,
-      gender: e.target.elements.getGender.value,
-      country: e.target.elements.getCountry.value,
-      studentID: e.target.elements.getID.value,
     });
+    setShow(false);
   };
   return (
     <>
@@ -40,22 +38,6 @@ function AddStudent(props) {
               <Form.Label>Student score:</Form.Label>
               <Form.Control name="getScore" type="text" placeholder="" />
             </Form.Group>
-
-            <Form.Group className="mb-3 score" controlId="">
-              <Form.Label>Student gender:</Form.Label>
-              <Form.Control name="getGender" type="text" placeholder="" />
-            </Form.Group>
-
-            <Form.Group className="mb-3 score" controlId="">
-              <Form.Label>Student country:</Form.Label>
-              <Form.Control name="getCountry" type="text" placeholder="" />
-            </Form.Group>
-
-            <Form.Group className="mb-3 score" controlId="">
-              <Form.Label>Student ID:</Form.Label>
-              <Form.Control name="getID" type="text" placeholder="" />
-            </Form.Group>
-
             <Button variant="primary" type="submit">
               Submit
             </Button>
